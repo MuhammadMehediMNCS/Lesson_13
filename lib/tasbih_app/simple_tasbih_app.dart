@@ -29,7 +29,7 @@ class _TasbihDesignState extends State<TasbihDesign> {
 
   @override
   void initState() {
-    readData();
+    //readData();
     box.writeIfNull('data', 0);
     
     super.initState();
@@ -182,7 +182,7 @@ class _TasbihDesignState extends State<TasbihDesign> {
                   fontFamily: 'SutonnyOMJ', fontSize: 20, color: Colors.white
                 ),
               ),
-              if(counter == targetValue)
+              if(counter >= targetValue)
               CircleAvatar(
                 backgroundColor: Colors.white,
                 child: Image.asset(
